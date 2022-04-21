@@ -3,6 +3,11 @@ var characterLength = 8;
 var choiceArr = [];
 
 
+var lowercaseArr = Array( 26 ).fill( 1 ).map( ( _, i ) => String.fromCharCode( 97 + i ) );
+var uppercaseArr = Array( 26 ).fill( 1 ).map( ( _, i ) => String.fromCharCode( 65 + i ) );
+var numberArr = Array( 10 ).fill( 1 ).map( ( _, i ) => String.fromCharCode( 48 + i ) );
+var specialCharacterArr = ['@','$','%','&','#','?','!','+','=','*','<','>'];
+
 // prompts to generate passcode
 function getPrompts() {
   // This resets the choiceArr so it does not save and repaaet the function on the next generate button click
