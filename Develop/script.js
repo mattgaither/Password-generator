@@ -48,16 +48,16 @@ function getPrompt() {
       alert("The value must be in number form, 8 - 128. Please try again.");
       return false;
     }
-    if(confirm("Click okay if you would like lowercase letters in your password.")) {
+    if(confirm("Click 'Ok' if you would like Lowercase letters in your password.")) {
       choiceArr = choiceArr.concat(lowercaseArr);
     }
-    if(confirm("Click okay if you would like Uppercase letters in your password.")) {
+    if(confirm("Click 'Ok' if you would like Uppercase letters in your password.")) {
       choiceArr = choiceArr.concat(uppercaseArr);
     }
-    if(confirm("Click okay if you would like special characters in your password.")) {
+    if(confirm("Click 'Ok' if you would like special characters in your password.")) {
       choiceArr = choiceArr.concat(specialCharacterArr);
     }
-    if(confirm("Click okay if you would like numbers in your password.")) {
+    if(confirm("Click 'Ok' if you would like numbers in your password.")) {
       choiceArr = choiceArr.concat(numberArr);
     }
     return true;
